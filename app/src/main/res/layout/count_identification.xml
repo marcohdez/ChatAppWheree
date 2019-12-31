@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical"
+    tools:context=".Identification">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="16sp"
+        android:paddingBottom="16sp"
+        android:text="@string/si_formas_parte_de_appwhere_ingrese_el_codigo_de_verificaci_n_o_escanea_el_codigo_qr_para_poder_continuar"
+        android:textColor="#D00" />
+
+    <EditText
+        android:id="@+id/codigo1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/codigo_de_verificaci_n"
+        android:inputType="textPassword"
+        android:maxLength="30"
+        android:paddingBottom="8dp" />
+
+    <EditText
+        android:id="@+id/codigo2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/confirmar_codigo_de_verificaci_n"
+        android:inputType="textPassword"
+        android:maxLength="30"
+        android:paddingBottom="8dp"
+        app:passwordToggleEnabled="true" />
+
+    <ImageView
+            android:id="@+id/scanner"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:onClick="Escanear"
+            app:srcCompat="@drawable/codeqr"
+            tools:ignore="OnClick" />
+
+
+</LinearLayout>
+
+
+
+
